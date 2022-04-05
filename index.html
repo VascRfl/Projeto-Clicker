@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Projeto Clicker</title>
+</head>
+
+<body>
+
+
+    <div class="row g-0 header">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                Projeto Clicker!
+            </div>
+        </div>
+    </div>
+    <div class="container g-0">
+        <div class="row">
+            <div class="col">
+                <div class="container score">
+                    <div class="row">
+                        <div class="col">
+                            Clicks:
+                        </div>
+                        <div class="col" id="pontos">
+                        </div>
+                    </div>
+                </div>
+                <button class="button" id="btnClicker">
+                    <img class="imgButton" id="imagemBtn" src="images/button.png" alt="botão">
+                </button>
+            </div>
+            <div class="p-4 col-6">
+                
+            </div>
+            <div class="col text-center">
+                <div class="m-2 row align-items-start">
+                    <div class="col">
+                        <h2>LOJINHA</h2>
+                    </div>
+                </div>
+                <div class="row d-flex flex-row">
+                    <div class="col">
+                        <div class="m-1 card" style="background-color: #b26bc5;">
+                            <img class="card-img-top cardImage" src="images/arrow-cursor.png" alt="mouse cursor">
+                            <div class="card-body">
+                                <p class="card-text">Aumenta o valor do click +1.</p>
+                                <button type="button" class="btn btn-light" id="upgrade" disabled>Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
