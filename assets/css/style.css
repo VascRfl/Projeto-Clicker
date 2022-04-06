@@ -11,6 +11,12 @@ body {
   background-color: #e797ff;
 }
 
+.audio {
+  position: fixed;
+  top: 42px;
+  left: 20px;
+}
+
 .score {
   position: absolute;
   top: 150px;
@@ -31,6 +37,10 @@ ul.reset ul li {
   padding: 0;
   text-indent: 0;
   list-style-type: none;
+}
+
+ul li {
+  font-size: 1.5rem;
 }
 
 .header {

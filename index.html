@@ -13,6 +13,9 @@
 
 <body>
 
+    <audio class="audio" src="music/lofizin.mp3" controls autoplay>
+        <p>If you are reading this, it is because your browser does not support the audio element.</p>
+    </audio>
 
     <div class="row g-0 header">
         <div class="row">
@@ -22,8 +25,19 @@
         </div>
     </div>
     <div class="container g-0">
-        <div class="row">
+        <div class="row align-items-start">
             <div class="col">
+                <div class="m-2 row">
+                    <h2>STATUS</h2>
+                    <div class="row">
+                        <ul class="reset">
+                            <li id="clickPower">Poder do click: 1</li>
+                            <li id="autoClicks">Cliques por segundo: 0</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 col">
                 <div class="container score">
                     <div class="row">
                         <div class="col" style="line-height: 16px;">
@@ -36,30 +50,30 @@
                     <img class="imgButton" id="imagemBtn" src="images/button.png" alt="botão">
                 </button>
             </div>
-            <div class="p-4 col">
-                <div class="m-2 row align-items-start">
-                    <h2>STATUS</h2>
-                    <div class="row">
-                        <ul class="reset">
-                            <li id="clickPower">Poder do click: 1</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
             <div class="col text-center">
                 <div class="m-2 row align-items-start">
                     <div class="col">
                         <h2>LOJINHA</h2>
                     </div>
                 </div>
-                <div class="row d-flex flex-row">
-                    <div class="col">
-                        <div class="m-1 card" style="background-color: #b26bc5;">
+                <div class="row d-flex flex-wrap flex-col">
+                    <div class="col-6">
+                        <div class="card" style="width: 200px; max-height: 350px; background-color: #b26bc5;">
                             <img class="card-img-top cardImage" src="images/arrow-cursor.png" alt="mouse cursor">
                             <div class="card-body">
                                 <p class="card-text">Aumenta o valor do click +1.</p>
-                                <p id="custo" class="card-text" style="font-weight: bolder;">CUSTO: 1 clicks</p>
+                                <p id="custo1" class="card-text" style="font-weight: bolder;">CUSTO: 1 clicks</p>
                                 <button type="button" class="btn btn-success" id="upgrade01">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card" style="width: 200px; max-height: 350px; background-color: #b26bc5;">
+                            <img class="card-img-top cardImage" src="images/upgrade.png" alt="mouse cursor">
+                            <div class="card-body">
+                                <p class="card-text">Adiciona um autoclick.</p>
+                                <p id="custo2" class="card-text" style="font-weight: bolder;">CUSTO: 10 clicks</p>
+                                <button type="button" class="btn btn-success" id="upgrade02">Comprar</button>
                             </div>
                         </div>
                     </div>
