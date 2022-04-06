@@ -26,19 +26,25 @@
             <div class="col">
                 <div class="container score">
                     <div class="row">
-                        <div class="col">
-                            Clicks:
+                        <div class="col" style="line-height: 16px;">
+                            <p style="text-align: center; padding-top: 22px;">Clicks: </p>
                         </div>
-                        <div class="col" id="pontos">
-                        </div>
+                        <div class="col" id="pontos">0</div>
                     </div>
                 </div>
-                <button class="button" id="btnClicker">
+                <button type="button" class="button" id="btnClicker">
                     <img class="imgButton" id="imagemBtn" src="images/button.png" alt="botão">
                 </button>
             </div>
-            <div class="p-4 col-6">
-                
+            <div class="p-4 col">
+                <div class="m-2 row align-items-start">
+                    <h2>STATUS</h2>
+                    <div class="row">
+                        <ul class="reset">
+                            <li id="clickPower">Poder do click: 1</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="col text-center">
                 <div class="m-2 row align-items-start">
@@ -52,7 +58,8 @@
                             <img class="card-img-top cardImage" src="images/arrow-cursor.png" alt="mouse cursor">
                             <div class="card-body">
                                 <p class="card-text">Aumenta o valor do click +1.</p>
-                                <button type="button" class="btn btn-light" id="upgrade" disabled>Comprar</button>
+                                <p id="custo" class="card-text" style="font-weight: bolder;">CUSTO: 1 clicks</p>
+                                <button type="button" class="btn btn-success" id="upgrade01">Comprar</button>
                             </div>
                         </div>
                     </div>

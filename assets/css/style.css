@@ -24,6 +24,15 @@ body {
   font-size: 1.75em;
 }
 
+ul.reset,
+ul.reset li,
+ul.reset ul li {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+}
+
 .header {
   background-color: #bd64d8;
   max-width: 100vw;
